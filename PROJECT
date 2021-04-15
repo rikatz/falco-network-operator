@@ -1,0 +1,12 @@
+domain: falco.org
+layout:
+- go.kubebuilder.io/v3
+projectName: falco-network-controller
+repo: github.com/rikatz/falco-network-operator
+resources:
+- controller: true
+  domain: falco.org
+  group: networking.kubernetes.io
+  kind: NetworkPolicy
+  version: v1
+version: "3"
